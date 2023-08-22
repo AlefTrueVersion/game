@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen">
+    <script src="logica.js"></script>
+</head>
+<body>
+     <div id="geral2" > 
+      <div id="internal" >
+        <h1>Calculadora Básica</h1> <br>
+          <form action ="forumalario.html" method="POST"> 
+            <div id="primeirobloco" >    
+              <label for="primeirovalor" name="primeironumero" id="numero1" >Primeiro Número </label>
+               <input type="text" name="primeirovalor" id="primeirovalor"> <br>
+            </div>
+           
+     <div id="segundobloco" >
+       <label for="segundovalor" name="segundovalor" id="numero2">Segundo Valor</label> 
+       <input type="number" name="segundovalor" id="segundovalor"> <br>
+     </div>
+      <br>
+     </div>
+            
+          
+     <div class="campo" >
+       <label>Operação:</label>
+         <select name="cbxOperacao" id="cbxOperacao"><br>
+            <option value="+">Adição</option>
+            <option value="-">Subtração</option>
+            <option value="/">Divisão</option>
+            <option value="*">Multiplicação</option>
+         </select> 
+                    
+     </div><br>
+          </form>  
+      
+     <div id="butao" >
+        <button  type="button" onclick="calculo()">Resultado</button>
+     </div>
+    
+    </div>
+</body>
+</html>
